@@ -1,0 +1,74 @@
+:root {
+    /* ФОНОВЫЕ ЦВЕТА (Бэкграунд) */
+    --kg-bg-main: #1f1f28; /* Главный глубокий темный фон сайта (mSurface) */
+    --kg-bg-side: #2a2a37; /* Панели: фон для хедера, футера и карточек (mSurfaceVariant) */
+
+    /* ТЕКСТ (Буквы) */
+    --kg-tx-main: #c8c093; /* Основной мягкий текст цвета пергамента (mOnSurface) */
+    --kg-tx-mute: #717c7c; /* Второстепенный серо-зеленый текст (mOnSurfaceVariant) */
+
+    /* ЗАГОЛОВКИ */
+    --kg-hd-main: #76946a; /* Главные заголовки h1, h2 (Фирменный зеленый mPrimary) */
+
+    /* ИНТЕРАКТИВ (Ссылки и кнопки) */
+    --kg-lnk-main: #7e9cd8; /* Ссылки и кнопки по умолчанию (Приглушенный синий mTertiary) */
+    --kg-lnk-hovr: #c0a36e; /* Цвет при наведении мыши (Песочно-желтый mSecondary) */
+
+    /* ГРАНИЦЫ И ЛИНИИ */
+    --kg-bd-line: #363646; /* Строгие рамки и разделители (mOutline) */
+}
+
+body {
+    background-color: var(
+        --kg-bg-main
+    ); /* Весь сайт теперь светлый, цвета старого пергамента */
+    color: var(--kg-tx-main); /* Текст глубокий темный, отлично читается */
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--kg-bg-side); /* Выделяющийся серо-зеленый хедер */
+    border-bottom: 2px solid var(--kg-bd-line);
+    padding: 20px;
+}
+
+h1 {
+    color: var(--kg-hd-main); /* Фирменный зеленый заголовок */
+    font-size: 3rem;
+}
+
+/* 1. Выстраиваем логотип и все меню в одну линию */
+header {
+    display: flex;
+    align-items: center; /* Выравнивает логотип и текст по центру вертикали */
+    justify-content: space-between; /* Толкает логотип влево, а меню — в самый правый край */
+    padding: 15px 30px; /* Внутренние отступы шапки, чтобы код не прилипал к краям */
+    background-color: var(
+        --kg-bg-side,
+        var(--gb-bg-side)
+    ); /* Цвет фона шапки */
+}
+
+/* 2. Выстраиваем пункты списка (Home, About, Contact) в ряд */
+header nav ul {
+    display: flex;
+    gap: 25px; /* Расстояние между ссылками в пикселях */
+    list-style: none; /* Полностью убирает маркеры-точки у списка */
+    margin: 0;
+    padding: 0;
+}
+
+/* 3. Стили для самих ссылок, чтобы они подхватили цвета вашей темы */
+header nav ul li a {
+    color: var(--kg-tx-main, var(--gb-tx-main));
+    text-decoration: none; /* Убирает стандартное синее подчеркивание */
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+/* Эффект при наведении мышки на ссылку */
+header nav ul li a:hover {
+    color: var(--kg-lnk-main, var(--gb-lnk-main));
+}
