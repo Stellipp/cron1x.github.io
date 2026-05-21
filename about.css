@@ -72,3 +72,23 @@ header nav ul li a {
 header nav ul li a:hover {
     color: var(--kg-lnk-main, var(--gb-lnk-main));
 }
+
+@media (max-width: 650px) {
+  
+  /* 1. В шапке меняем направление с горизонтального на вертикальное */
+  header {
+    flex-direction: column; 
+    gap: 15px;             /* Расстояние между логотипом и списком */
+    padding: 15px 10px;    /* Уменьшаем боковые отступы на смартфонах */
+    text-align: center;
+  }
+
+  /* 2. Делаем пункты списка покрупнее, чтобы по ним было удобно тапать пальцем */
+  header nav ul {
+    gap: 20px;             /* Расстояние между кнопками меню на телефоне */
+  }
+  
+  header nav ul li a {
+    font-size: 1.1rem;     /* Немного увеличиваем размер шрифта для пальцев */
+  }
+}
