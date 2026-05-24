@@ -36,6 +36,7 @@ header {
 
 h1 {
     color: var(--kg-hd-main); /* Фирменный зеленый заголовок */
+    font-family: 'JetBrains Mono', monospace;
     font-size: 3rem;
 }
 
