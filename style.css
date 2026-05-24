@@ -23,7 +23,7 @@ body {
         --kg-bg-main
     ); /* Весь сайт теперь светлый, цвета старого пергамента */
     color: var(--kg-tx-main); /* Текст глубокий темный, отлично читается */
-    font-family: sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
     margin: 0;
     padding: 0;
 }
