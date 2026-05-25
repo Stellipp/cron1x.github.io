@@ -159,14 +159,14 @@ main {
 /* Стили для главного заголовка */
 .content-sheet h1 {
   color: var(--kg-hd-main, var(--gb-hd-main));
-  font-size: 2.2rem;
+  font-size: 1.7rem;
   margin-bottom: 25px;        /* Отступ снизу от заголовка */
 }
 
 /* Стили для подзаголовков внутри статьи */
 .content-sheet h2, .content-sheet h3 {
   color: var(--kg-hd-main, var(--gb-hd-main));
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   margin-top: 35px;           /* Отступ сверху, чтобы отделить от предыдущего абзаца */
   margin-bottom: 15px;        /* Отступ снизу до текста */
 }
