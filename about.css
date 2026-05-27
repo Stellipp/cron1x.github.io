@@ -141,6 +141,12 @@ main {
     font-size: 1.1rem;     /* Немного увеличиваем размер шрифта для пальцев */
   }
 
+  main {
+  max-width: 900px;           /* Максимальная ширина текстовой зоны */
+  margin: 0 auto;             /* Центрирует блок по горизонтали */
+  padding: 40px 20px;         /* Отступы: 40px сверху/снизу, 20px по бокам */
+}
+
   .content-sheet {
   background-color: var(--kg-bg-side, var(--gb-bg-side)); /* Мягкий фон панелей */
   border: 1px solid var(--kg-bd-line, var(--gb-bd-line)); /* Тонкая строгая рамка */
