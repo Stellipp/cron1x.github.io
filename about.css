@@ -74,6 +74,48 @@ header nav ul li a:hover {
     color: var(--kg-lnk-main, var(--gb-lnk-main));
 }
 
+.content-sheet {
+  background-color: var(--kg-bg-side, var(--gb-bg-side)); /* Мягкий фон панелей */
+  border: 1px solid var(--kg-bd-line, var(--gb-bd-line)); /* Тонкая строгая рамка */
+  border-radius: 8px;         /* Слегка скругляем углы */
+  padding: 40px;              /* Большие внутренние отступы, чтобы текст «дышал» */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Легкая глубокая тень */
+}
+
+/* Стили для главного заголовка */
+.content-sheet h1 {
+  color: var(--kg-hd-main, var(--gb-hd-main));
+  font-size: 1.7rem;
+  margin-bottom: 25px;        /* Отступ снизу от заголовка */
+}
+
+/* Стили для подзаголовков внутри статьи */
+.content-sheet h2, .content-sheet h3 {
+  color: var(--kg-hd-main, var(--gb-hd-main));
+  font-size: 1.2rem;
+  margin-top: 35px;           /* Отступ сверху, чтобы отделить от предыдущего абзаца */
+  margin-bottom: 15px;        /* Отступ снизу до текста */
+}
+
+/* Стили для обычных абзацев текста */
+.content-sheet p {
+  margin-bottom: 20px;        /* Отступ между абзацами */
+  font-size: 1.05rem;         /* Чуть-чуть увеличиваем размер для шрифта Inter */
+  line-height: 1.7;           /* Увеличиваем расстояние между строками для читаемости */
+}
+
+/* Стили для списков (ваши пункты про Scratch, Pygame и т.д.) */
+.content-sheet ul {
+  margin-left: 20px;          /* Отступ слева для всего списка */
+  margin-bottom: 25px;
+}
+
+.content-sheet li {
+  margin-bottom: 12px;        /* Расстояние между пунктами списка */
+  line-height: 1.6;
+}
+
+
 @media (max-width: 650px) {
   
   /* 1. В шапке меняем направление с горизонтального на вертикальное */
@@ -92,4 +134,46 @@ header nav ul li a:hover {
   header nav ul li a {
     font-size: 1.1rem;     /* Немного увеличиваем размер шрифта для пальцев */
   }
+
+  .content-sheet {
+  background-color: var(--kg-bg-side, var(--gb-bg-side)); /* Мягкий фон панелей */
+  border: 1px solid var(--kg-bd-line, var(--gb-bd-line)); /* Тонкая строгая рамка */
+  border-radius: 8px;         /* Слегка скругляем углы */
+  padding: 40px;              /* Большие внутренние отступы, чтобы текст «дышал» */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Легкая глубокая тень */
+}
+
+/* Стили для главного заголовка */
+.content-sheet h1 {
+  color: var(--kg-hd-main, var(--gb-hd-main));
+  font-size: 1.7rem;
+  margin-bottom: 25px;        /* Отступ снизу от заголовка */
+}
+
+/* Стили для подзаголовков внутри статьи */
+.content-sheet h2, .content-sheet h3 {
+  color: var(--kg-hd-main, var(--gb-hd-main));
+  font-size: 1.2rem;
+  margin-top: 35px;           /* Отступ сверху, чтобы отделить от предыдущего абзаца */
+  margin-bottom: 15px;        /* Отступ снизу до текста */
+}
+
+/* Стили для обычных абзацев текста */
+.content-sheet p {
+  margin-bottom: 20px;        /* Отступ между абзацами */
+  font-size: 1.05rem;         /* Чуть-чуть увеличиваем размер для шрифта Inter */
+  line-height: 1.7;           /* Увеличиваем расстояние между строками для читаемости */
+}
+
+/* Стили для списков (ваши пункты про Scratch, Pygame и т.д.) */
+.content-sheet ul {
+  margin-left: 20px;          /* Отступ слева для всего списка */
+  margin-bottom: 25px;
+}
+
+.content-sheet li {
+  margin-bottom: 12px;        /* Расстояние между пунктами списка */
+  line-height: 1.6;
+}
+
 }
